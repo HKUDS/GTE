@@ -36,7 +36,7 @@ adj = scipy_sparse_mat_to_torch_sparse_tensor(train).coalesce().to(device)
 # iterative representation propagation on graph
 for i in range(k):
     print("Running layer", i)
-    user_rep_temp = torch.sparse.mm(adj,item_rep)
+    user_rep_temp = torch.sparse.mm(adj,item_rep) + user_rep
     item_rep_temp = torch.sparse.mm(adj.transpose(0,1),user_rep) + item_rep
     user_rep = user_rep_temp
     item_rep = item_rep_temp
