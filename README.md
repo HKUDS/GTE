@@ -1,5 +1,5 @@
 # GTE
-This is the Python implementation for the GTE algorithm in the paper **How Expressive are Graph Neural Networks in Recommendation?**, *ACM International Conference on Information and Knowledge Management*, 2023.
+This is the Python implementation for the GTE algorithm in the paper **How Expressive are Graph Neural Networks in Recommendation?**, *ACM International Conference on Information and Knowledge Management*, 2023. [[arXiv]](https://arxiv.org/abs/2308.11127)
 
 #### How to run the codes
 ```
